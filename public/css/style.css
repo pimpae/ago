@@ -170,6 +170,17 @@ h1{
   width: 4px;
   background-color: #000;
 } 
+.org3:before{
+  content: "";
+  position: absolute;
+  left: auto;
+  right: auto;
+  display: block; 
+  height: var(--h-org);
+  top: 100%;
+  width: 4px;
+  background-color: #000;
+} 
 .org2.active span{
   display: none;
 } 
@@ -195,20 +206,118 @@ h1{
   left: 0;
   top: 0; 
 }
-.org4{
-  padding: 10px;
+.org4{ 
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: #fff;
   text-align: center;
-  font-size: 14px;
+  font-size: 11px;
   margin-left: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 5px;
+  margin-top: 30px; 
+  width: 240px !important;
+  cursor: pointer;  
+  padding: 10px; 
+  height: 53px;
+}
+.org4.active{
+  background-color: var(--bg-main);
+  color: #fff;
 }
 
+.level4 > .org4{
+  position: relative;
+} 
+.level4 > .org4:after{
+  content: "";
+  position: absolute;
+  background-color: #000; 
+  top: -30px;
+  width: calc(100% + 10px);
+  height: 4px;
+}
+.level4 > .org4:first-child:after { 
+  left: 50%;
+}
+.level4 > .org4:last-child:after { 
+  right: 50%;
+}
+.org4:before {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: auto;
+  display: block;
+  height: var(--h-org);
+  top: calc(-50% - 4px);
+  width: 4px;
+  background-color: #000;
+}
 
+.org41{ 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 11px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  margin-top: 30px; 
+  width: 240px !important;
+  cursor: pointer;  
+  padding: 10px; 
+  height: 53px;
+  position: relative;
+}
+.org41:before {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: auto;
+  display: block;
+  height: var(--h-org);
+  top: calc(-50% - 4px);
+  width: 4px;
+  background-color: #000;
+}
+.level4{
+  display: none;
+} 
+.level3.active + .level4{
+  display: flex !important;
+} 
+
+.org3:before {
+  content: unset; 
+}
+.org3.active:before {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: auto;
+  display: block;
+  height: var(--h-org);
+  top: 100%;
+  width: 4px;
+  background-color: #000;
+}
+.org3.active:after {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: auto;
+  display: block;
+  height: var(--h-org);
+  top: -50%;
+  width: 4px;
+  background-color: #000;
+}
+
+/* 
 
 .sub2{
   position: relative;
@@ -280,7 +389,7 @@ h1{
   left: 0;
 }
 
-
+ */
 
 
 
