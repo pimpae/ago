@@ -2,7 +2,7 @@
   --bg-main: #EB7500;  
   --bg-main2: #b85c00;   
   --bg-main3: #FFEDB3;   
-  --bg-main4: #218cc2;    
+  --bg-main4: #fefbf4;    
   --h-org: 30px;  
   --h-org2: 30px;  
 }
@@ -221,6 +221,7 @@ h1{
   cursor: pointer;  
   padding: 10px; 
   height: 53px;
+  background-color: var(--bg-main4);
 }
 .org4.active{
   background-color: var(--bg-main);
@@ -258,7 +259,7 @@ h1{
 
 .org41{ 
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: #fff;
+  background-color: var(--bg-main4);
   text-align: center;
   font-size: 11px;
   margin-left: 5px;
@@ -316,81 +317,148 @@ h1{
   width: 4px;
   background-color: #000;
 }
-
-/* 
-
-.sub2{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  background-color: var(--bg-main3);
-  padding: 15px 0px; 
-  margin: auto; 
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  cursor: pointer; 
-  transition: .33s all ease-out;  
-  font-size: 16px;
+.org4.active{
   z-index: 5 !important;
-  margin-top: 40px;
+  position: relative;
+} 
+.org4.active div{
+  height: 30px;
+  width: 4px;
+  background-color: #000;
+  position: absolute; 
+  top: 100%;
+}
+.sub{
+  margin-top: 30px;
+  display: none;
+}
+.sub.active{ 
+  display: flex;
+}
+
+.org5{ 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
   text-align: center;
-  height: 96px;
-} 
-.sub2:after{
+  font-size: 11px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  margin-top: 30px; 
+  width: 240px !important; 
+  padding: 10px; 
+  height: 53px;
+  cursor: pointer;
+}
+.org5:after {
   content: "";
-  position: absolute; 
-  display: block;
+  position: absolute;
+  background-color: #000;
+  top: -30px;
+  width: calc(100% + 10px);
+  height: 4px;
+}
+.org5:first-child:after { 
   left: 50%;
-  height: 3px;
-  top: -40px; 
-  width: 113%;
-  background-color: #000; 
-  z-index: 3 !important;
 }
-.organiz .col:last-child .sub2:after{ 
-  content: unset;
+.org5:last-child:after { 
+  right: 50%;
 }
-.sub2::before{
+.org5:before {
   content: "";
-  position: absolute; 
+  position: absolute;
+  left: auto;
+  right: auto;
   display: block;
-  left: calc(50% - 1.5px);
-  height: 40px;
-  top: -40px; 
-  width: 3px;
-  background-color: #000; 
-  z-index: 3 !important;
+  height: var(--h-org);
+  top: calc(-50% - 4px);
+  width: 4px;
+  background-color: #000;
 } 
-.sub2 + ul{
+.org5.active {
+  background-color: var(--bg-main3);
+}
+.org5.active div {
+  height: 60px;
+  width: 4px;
+  background-color: #000;
+  position: absolute;
+  top: 100%;
+}
+.sub-org{
+  display: none;
+  margin-top: 30px;
+  position: relative;
+}
+.sub-org.active{
+  display: flex !important; 
+}
+/* .sub-org.active:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: red;
+  height: 4px;
+  left: 60px;
+} */
+.org6{ 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 11px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  margin-top: 30px; 
+  width: 240px !important; 
+  padding: 10px; 
+  height: 58px; 
+} 
+.organiz{
+  display: none;
+}
+.organiz ul{
   list-style: none; 
   margin-top: 20px;
 }
-.sub2 + ul li{
+.organiz ul li{
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 20px; 
+  padding-left: 20px;
+  margin-bottom: 11px;  
+  font-size: 13px;
+  transition: .33s all ease-out;  
 }
-.sub2 + ul li::after{
+.organiz ul li a{
+  color: #000;
+}
+.organiz ul li:hover a{
+  color: var(--bg-main);
+}
+.organiz ul li::after{
   content: "";
   position: absolute;
   background-color: #000; 
   height: 2px;
-  width: 20px;
+  width: 15px;
   top: 50%;
   left: 0;
 }
-.sub2 + ul li::before{
+.organiz ul li::before{
   content: "";
   position: absolute;
   background-color: #000; 
   width: 2px;
-  height: 45px;
-  top: calc(-100% - 7px);
+  height: 30px;
+  top: calc(-100%);
   left: 0;
 }
-
- */
-
+.organiz.sub-org1.active{
+  display: flex;
+}
 
 
 /* 
