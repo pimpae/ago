@@ -100,40 +100,89 @@
 
 					</div>
 
-
+					<div class="row sub sub1"> 
+						<div class="col org5" data-sub="11">สถาบันนิติวัชร์ 
+							<div></div>
+						</div>   
+						<div class="col org5" data-sub="12">สำนักบริหารและสนับสนุนงานอัยการสูงสุด 
+							<div></div>
+						</div>   
+						<div class="col org5" data-sub="13">สถาบันพัฒนาข้าราชการฝ่ายอัยการ 
+							<div></div>
+						</div>   
+						<div class="col org5" data-sub="14">สำนักงานคณะกรรมการอัยการ 
+							<div></div>
+						</div>   
+						<div class="col org5" data-sub="15">สำนักงานที่ปรึกษากฎหมาย 
+							<div></div>
+						</div>   
+						<div class="col org5" data-sub="16">สำนักงานวิชาการ 
+							<div></div>
+						</div>   
+					</div>  
+					<div class="row sub sub2"> 
+						<div class="col-2 org5" data-sub="21">สำนักงานอัยการพิเศษฝ่าย 
+							<div></div>
+						</div>   
+						<div class="col-2 org5" data-sub="22">สำนักอำนวยการ 
+							<div></div>
+						</div>     
+					</div>  
 					 
 					<div class="row sub sub3"> 
-						<div class="col org5" data-sub3="1">สำนักงานอัยการภาค ๑
+						<div class="col org5" data-sub="31">สำนักงานอัยการภาค ๑
 							<div></div>
 						</div>  
-						<div class="col org5" data-sub3="2">สำนักงานอัยการภาค ๒
+						<div class="col org5" data-sub="32">สำนักงานอัยการภาค ๒
 							<div></div>
 						</div>  
-						<div class="col org5" data-sub3="3">สำนักงานอัยการภาค ๓
+						<div class="col org5" data-sub="33">สำนักงานอัยการภาค ๓
 							<div></div>
 						</div>  
-						<div class="col org5" data-sub3="4">สำนักงานอัยการภาค ๔
+						<div class="col org5" data-sub="34">สำนักงานอัยการภาค ๔
 							<div></div>
 						</div>  
-						<div class="col org5" data-sub3="6">สำนักงานอัยการภาค ๕
+						<div class="col org5" data-sub="36">สำนักงานอัยการภาค ๕
 							<div></div>
 						</div>  
-						<div class="col org5" data-sub3="7">สำนักงานอัยการภาค ๕
+						<div class="col org5" data-sub="37">สำนักงานอัยการภาค ๕
 							<div></div>
 						</div>  
-						<div class="col org5" data-sub3="8">สำนักงานอัยการภาค ๗
+						<div class="col org5" data-sub="38">สำนักงานอัยการภาค ๗
 							<div></div>
 						</div>  
-						<div class="col org5" data-sub3="8">สำนักงานอัยการภาค ๘
+						<div class="col org5" data-sub="38">สำนักงานอัยการภาค ๘
 							<div></div>
 						</div>  
-						<div class="col org5" data-sub3="9">สำนักงานอัยการภาค ๙
+						<div class="col org5" data-sub="39">สำนักงานอัยการภาค ๙
 							<div></div>
 						</div> 
 					</div>  
 
 
-					<div class="row sub-org sub-org1"> 
+					
+					<!-- <div class="row sub sub1"> 
+						<div class="col org5" data-sub3="1">xxxxxxxx 
+							<div></div>
+						</div>   
+						<div class="col org5" data-sub3="1">xxxxxxxx 
+							<div></div>
+						</div>   
+						<div class="col org5" data-sub3="1">xxxxxxxx 
+							<div></div>
+						</div>   
+						<div class="col org5" data-sub3="1">xxxxxxxx 
+							<div></div>
+						</div>   
+						<div class="col org5" data-sub3="1">xxxxxxxx 
+							<div></div>
+						</div>   
+						<div class="col org5" data-sub3="1">xxxxxxxx 
+							<div></div>
+						</div>   
+					</div>   -->
+
+					<div class="row sub-org sub-org31"> 
 						<div class="col org6">
 							สำนักงานอัยการจังหวัด
 							<div></div>
@@ -171,7 +220,7 @@
 						</div>   
 					</div>  
 
-					<div class="row organiz sub-org1"> 
+					<div class="row organiz sub-org31"> 
 						<div class="col"> 
 							<ul>
 								<li><a href="#" data-toggle="modal" data-target="#myModal">ชัยนาท</a></li>
@@ -342,13 +391,15 @@
 			$(".sub").removeClass("active" , 300);  
 			$(".sub"+$(this).attr("data-sub")).addClass("active" , 300);    
 			$(".org5").removeClass("active" , 300);  
+			$(".sub-org").removeClass("active" , 300);  
+			$(".organiz").removeClass("active" , 300);
 		});   
 		$('.org5').click(function(){    
 			$(".org5").removeClass("active" , 300);  
 			$(".organiz").removeClass("active" , 300);  
 			$(this).addClass("active" , 300);    
 			$(".sub-org").removeClass("active" , 300);  
-			$(".sub-org"+$(this).attr("data-sub3")).addClass("active" , 300);     
+			$(".sub-org"+$(this).attr("data-sub")).addClass("active" , 300);     
 		});   
 
 

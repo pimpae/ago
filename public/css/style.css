@@ -456,10 +456,12 @@ h1{
   top: calc(-100%);
   left: 0;
 }
-.organiz.sub-org1.active{
+.organiz.active{
   display: flex;
 }
-
+.sub1 .org5:nth-child(1)::after{
+  left: calc(35% + 2px);
+}
 
 /* 
 
