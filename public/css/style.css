@@ -44,14 +44,14 @@ h1{
   max-width: 100%;
 } 
 .org span{
-   animation: blink-text 1.9s linear infinite;   
+  /* animation: blink-text 1.9s linear infinite;    */
   position: absolute; 
   bottom: 5px;
   right: 5px;
   font-size: 16px;
 } 
 .org.active span{
-  display: none;
+  transform: rotate(180deg);
 } 
 .org:hover{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -182,7 +182,7 @@ h1{
   background-color: #000;
 } 
 .org2.active span{
-  display: none;
+  transform: rotate(180deg);
 } 
 .level3 > div{
   position: relative;
