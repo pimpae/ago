@@ -65,10 +65,14 @@ h1{
   height: var(--h-org);
   top: 100%;
   width: 4px;
-  background-color: #000;
-} 
+  background-color: #000; 
+}
+/*
 .m{ 
   box-shadow: rgba(235, 117, 0, 0.4) 5px 5px, rgba(235, 117, 0, 0.3) 10px 10px, rgba(235, 117, 0, 0.2) 15px 15px, rgba(235, 117, 0, 0.1) 20px 20px, rgba(235, 117, 0, 0.05) 25px 25px;
+} */
+.m{ 
+  box-shadow: rgba(235, 117, 0, 0.4) 5px 5px, rgba(235, 117, 0, 0.3) 10px 10px ;
 }
 .org.org1{ 
   background-color: var(--bg-main2); 
@@ -416,6 +420,7 @@ h1{
   margin-top: 30px; 
   width: 240px !important; 
   padding: 10px; 
+  height: 100px;
 } 
 .organiz{
   display: none;
@@ -423,7 +428,7 @@ h1{
 .organiz ul{
   list-style: none; 
   margin-top: 20px;
-  padding-left: 3px;
+  padding-left: 10px;
 }
 .organiz ul li{
   position: relative;
@@ -460,7 +465,7 @@ h1{
   display: flex;
 }
 .sub1 .org5:nth-child(1)::after{
-  left: calc(35% + 2px);
+  left: calc(32% + 3px);
 }
 .modal .nav-tabs{
   border-bottom: 0px;
@@ -585,7 +590,9 @@ h1{
   border-radius: 0;
   margin-bottom: 20px;
 }
-
+.sub {
+  width: 110%;
+}
 /* 
 
 transition: .33s all ease-out;  
