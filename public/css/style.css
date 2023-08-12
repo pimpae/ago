@@ -260,7 +260,6 @@ h1{
   width: 4px;
   background-color: #000;
 }
-
 .org41{ 
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: var(--bg-main4);
@@ -391,6 +390,30 @@ h1{
   position: absolute;
   top: 100%;
 }
+
+.org51{ 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 11px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  margin-top: 30px; 
+  width: 240px !important; 
+  padding: 10px; 
+  height: 53px;
+  cursor: pointer;
+}
+.mt-30{
+  margin-top: -30px;
+}
+.mt-30 li a{ 
+  white-space: nowrap; 
+}
+
 .sub-org{
   display: none;
   margin-top: 30px;
@@ -421,6 +444,7 @@ h1{
   width: 240px !important; 
   padding: 10px; 
   height: 100px;
+  cursor: pointer;
 } 
 .organiz{
   display: none;
@@ -464,9 +488,9 @@ h1{
 .organiz.active{
   display: flex;
 }
-.sub1 .org5:nth-child(1)::after{
+/* .sub1 .org5:nth-child(1)::after{
   left: calc(32% + 3px);
-}
+} */
 .modal .nav-tabs{
   border-bottom: 0px;
 } 
@@ -612,6 +636,10 @@ h1{
 .sub {
   width: 110%;
 }
+.org4x.active div {
+  height: 60px; 
+}
+
 /* 
 
 transition: .33s all ease-out;  
