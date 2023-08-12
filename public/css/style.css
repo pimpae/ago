@@ -421,15 +421,7 @@ h1{
 }
 .sub-org.active{
   display: flex !important; 
-}
-/* .sub-org.active:after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  background-color: red;
-  height: 4px;
-  left: 60px;
-} */
+} 
 .org6{ 
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: #fff;
@@ -638,6 +630,18 @@ h1{
 }
 .org4x.active div {
   height: 60px; 
+}
+.org34 {
+  font-size: 12px;
+}
+.ccc{
+  display: block;
+  margin: auto;
+  height: 20px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
 }
 
 /* 
