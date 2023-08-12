@@ -28,16 +28,13 @@
 		<div class="container-fluid text-center">
 			<h1><img src="public/images/mini-logo.png" alt=""> <u>แผนผังแสดงโครงสร้างการแบ่งส่วนราชการของสำนักงานอัยการสูงสุด </u></h1>
 		</div>
-		<div class="container-fluid">
-			<!-- <div class="assignment">
-				<span class="material-symbols-outlined">
-				assignment_ind
-				</span>
-			</div> -->
-			
-			<div class="org org1 level1 m active" data-toggle="modal" data-target="#myModal" >
+		<div class="container-fluid"> 
+			<div class="org org1 level1 m active"  >
 				อัยการสูงสูด
-				<span class="material-symbols-outlined">
+				<span class="material-symbols-outlined assignment" data-toggle="modal" data-target="#myModal">
+					person
+				</span> 
+				<span class="material-symbols-outlined  hh" >
 				keyboard_double_arrow_down
 				</span> 
 			</div>   
@@ -370,11 +367,14 @@
 							</div>   
 						</div>
 						<div class="col-6">
-							<div class="org org3 org34 active" style="display: flex;" data-toggle="modal" data-target="#myModal">
+							<div class="org org3 org34 active" style="display: flex;"   >
 								สำนักงานเลขาธิการสำนักงานอัยการสูงสุด 
-								<span class="material-symbols-outlined">
+								<span class="material-symbols-outlined assignment2" data-toggle="modal" data-target="#myModal">
+									person
+								</span> 
+								<span class="material-symbols-outlined  h-34" >
 								keyboard_double_arrow_down
-								</span>
+								</span> 
 							</div> 
 							
 							<div class="row justify-content-center level4 level4-5" style="display: flex;"> 
@@ -659,12 +659,12 @@
  
 	<script>
 
-		$('.org .assignment').click(function(){    
-			alert("xxx"); 
+		// $('.org .assignment').click(function(){    
+		// 	alert("xxx"); 
 
-		}); 
+		// }); 
 
-		$('.level1').click(function(){    
+		$('.hh').click(function(){    
 			if ($('.level1').hasClass('active')){
 				$(".org1").removeClass("active" , 300);   
 				$(".level2").fadeIn(1000).css("display", "none"); 
@@ -730,8 +730,8 @@
 				$(".org33").addClass("active" , 300); 
 			}
 		});  
-		$('.org34').click(function(){    
-			if ($(this).hasClass('active')){
+		$('.h-34').click(function(){    
+			if ($(".org34").hasClass('active')){
 				$(".org34").removeClass("active" , 300);   
 				$(".level4-5").fadeIn(1000).css("display", "none"); 
 				$(".sub").removeClass("active" , 300);  
