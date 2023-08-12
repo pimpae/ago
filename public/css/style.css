@@ -78,6 +78,7 @@ h1{
   background-color: var(--bg-main2); 
   color: #fff; 
   font-weight: bold;
+  position: relative;
 }  
 .org2:after{ 
   height: var(--h-org2);  
@@ -88,6 +89,19 @@ h1{
   height: 60px;
   margin-top: 30px;
 }   
+.assignment{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  top: 35px; 
+  background-color: rgba(255, 255, 255,.7);
+  color: #fff; 
+}
+.assignment span{
+  font-size: 20px;
+  transform: rotate(0deg) !important;
+}
 .org2:after{
   content: "";
   position: absolute;
